@@ -50,6 +50,21 @@ export default function App() {
                 title: "{STATUS}",
                 content: "{TRACKID}, {this}",
             },
+            labelingInfo: [
+                {
+                    symbol: {
+                        type: "text",
+                        color: "black",
+                    },
+                    labelPlacement: "always-horizontal",
+                    labelExpressionInfo: {
+                        expression: "$feature.TRACKID",
+                    },
+                },
+            ],
+            displayField: "TRACKID",
+            labelsVisible: true,
+            visible: true,
             renderer: {
                 type: "unique-value",
                 field: "STATUS",
