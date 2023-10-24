@@ -1,17 +1,9 @@
 import React, { useEffect } from "react";
-// import { loadModules } from "esri-loader";
-// import Map from "@arcgis/core/Map";
 import config from "@arcgis/core/config";
 import StreamLayer from "@arcgis/core/layers/StreamLayer";
 import MapView from "@arcgis/core/views/MapView";
 import Map from "@arcgis/core/Map";
-import Point from "@arcgis/core/geometry/Point";
-// const [Map, MapView, config] = await loadModules([
-//     "esri/Map",
-//     "esri/views/MapView",
-//     "esri/config",
-//     // "esri/layers/StreamLayer",
-// ]);
+
 export default function App() {
     let groupA = [
         "Yul",
@@ -5235,14 +5227,16 @@ export default function App() {
             container: "map",
             map,
             zoom: 2,
-            center: [-118.4, 34.0573],
+            center: [103.8198, 1.3521],
         });
         // sl.sendMessageToClient({});
 
         view.when().then(() => {
             let objectIdCounter = 0;
-            let lastX = -13180792.01151011;
-            let lastY = 4037145.9303959487;
+            // let lastX = -13180792.01151011;
+            // let lastY = 4037145.9303959487;
+            let lastX = 1.1541394311192667e7;
+            let lastY = 123106.05222064459;
             // let lastX = -118.4;
             // let lastY = 34.0573;
             // call sendMessageToClient method every 1 second
